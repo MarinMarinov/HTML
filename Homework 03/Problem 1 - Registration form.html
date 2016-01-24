@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Problem 1. Registration form</title>
+</head>
+<body>
+	<form name="registration" action="http://telerikacademy.com" method="post">
+		<table border="1" cellspacing="0" cellpadding="1">
+			<colgroup>
+				<col style="width:150px"/><col style="width:265px">
+			</colgroup>
+			<tr>
+				<td align="center">
+					<b>Last Name</b>
+				</td>
+				<td>
+					<input type="text" name="lastname" size="30" required/>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<b>First Name</b>				
+				</td>
+				<td>
+					<input type="text" name="firstname" size="30" required/>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<b>Address</b>				
+				</td>
+				<td>
+					<textarea name="address" rows="4" cols="29"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<b>City</b>				
+				</td>
+				<td>
+					<input type="text" name="city" size="19" required/>
+					State
+					<input type="text" name="state" size="3"/>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<b>Zip/Postal Code</b>
+				</td>
+				<td>
+					<input type="text" name="Zip" size="5" required="on"/>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<b>Country</b><!--This is not error! couNtry not coutry-->
+				</td>
+				<td>
+					<select name="country">
+						<option>Albaniq</option>
+                        <option>Afghanistan</option>
+                        <option>Albania</option>
+                        <option>Algeria</option>
+                        <option>Andorra</option>
+                        <option>Angola</option>
+                        <option>Antigua and Barbuda</option>
+                        <option>Argentina</option>
+                        <option>Armenia</option>
+                        <option>Aruba</option>
+                        <option>Australia</option>
+                        <option>Austria</option>
+                        <option>Azerbaijan</option>
+                        <option>Bahamas</option>
+                        <option>Bahrain</option>
+                        <option>Bangladesh</option>
+                        <option>Barbados</option>
+                        <option>Belarus</option>
+                        <option>Belgium</option>
+                        <option>Belize</option>
+                        <option>Benin</option>
+                        <option>Bhutan</option>
+                        <option>Bolivia</option>
+                        <option>Bosnia and Herzegovina</option>
+                        <option>Botswana</option>
+                        <option>Brazil</option>
+                        <option>Brunei</option>
+                        <option selected="selected">Bulgaria</option>
+                        <option>Burkina Faso</option>
+                        <option>Burma</option>
+                        <option>Burundi</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<b>Phone(contry code, <br />
+					area code, number )</b>
+				</td>
+				<td>
+					(+<input type="text" name="intPrefix" size="4">)
+					<input type="text" name="countryPrefix" size="4">
+					<input type="text" name="number" size="8">
+
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<b>E-mail</b>
+				</td>
+				<td>
+					<input type="email" name="email" size="30"/>					
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<b>Birth date</b>
+				</td>
+				<td>
+					<input type="text" name="birthDate" size="30" value="дд. мм. гггг  г." required="on"/>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<b>Gender</b>
+				</td>
+				<td>
+					<select name="gender">
+						<option selected="selected">Male</option>
+						<option>Female</option>						
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<b>Starting date</b>
+				</td>
+				<td>
+					<input type="radio" name="time" value="spring2015" id="spring">
+					<label for="spring">Spring 2015</label>
+					<input type="radio" name="time" value="summer2015" id="summer">
+					<label for="summer">Summer 2015</label>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<b>Comments/Questions</b>				
+				</td>
+				<td>
+					<textarea name="comments" rows="5" cols="29"></textarea>
+				</td>
+			</tr>
+			<tr style="background-color: skyblue;" >
+				<td colspan="2"  align="center">
+					<input type="submit" name="submit" value="Submit">
+					<input type="reset" name="reset" value="Clean This Form">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

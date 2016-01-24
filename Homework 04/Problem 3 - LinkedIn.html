@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Problem 3. LinkedIn</title>
+</head>
+<body>
+	<header>
+		<a href="/"><b>LinkedIn</b></a>
+		<ul>
+			<li><a href="/">Home</a></li>
+			<li><a href="/">What is LinkedIn</a></li>
+			<li><a href="/">Join Today</a></li>			
+			<li>
+				<fieldset>
+					<legend><a href="/">Sign In</a></legend>
+						<div>
+							<ul style="circle">
+							<form>
+								<li>Email: <input type="email" pattern="[^ @]*@[^ @].[^ @]"/></li>
+								<li>Password: <input type="password" name="password"/></li>
+								<li><input type="submit" value="Sign In"/></li>
+							</form>				
+							</ul>
+						</div>
+				</fieldset>
+			</li>			
+		</ul>
+	</header>
+
+	<hr/>
+
+	<section>
+		<h1>Over 175 million professionals use LinkedIn to exchange information, ideas and opportunities</h1>
+		<ul>
+			<li>Stay informed about your contacts and industry</li>
+			<li>Find the people &amp; knowledge you need to achieve your goals</li>
+			<li>Control your professional identity online</li>
+		</ul>
+	</section>
+
+	<section>
+		<h2>Join LinkedIn Today</h2>
+		<form name="registration" action="http://linkedin.com" method="post">
+			<fieldset>
+				<legend>Sign Up</legend>
+				<div>
+					<ul>
+						<li>First Name:</li>
+						<input type="text" name="firstName" />
+						<li>Last Name:</li>
+						<input type="text" name="lastName"/>
+						<li>Email:</li>
+						<input type="email" pattern="[^ @]*@[^ @].[^ @]"/>
+						<li>Password:</li>
+						<input type="password" name="password"/>
+						<p>6 or more characters</p>
+					</ul>				
+				</div>
+				<div>
+					<input type="submit" value="Join Now">
+					<p>Already on LinkedIn? <a href="/">Sign in.</a></p>
+				</div>
+			</fieldset>	
+		</form>			
+	</section>
+
+	<section>
+		<h3>Search for someone by name:</h3>
+		<form name="search" action="http://linkedin.com" method="post">
+			<ul>
+				<li>First Name: <input type="text" name="firstName" placeholder="First Name" /></li>
+				<li>Last Name: <input type="text" name="lastName" placeholder="Last Name" /></li>
+			</ul>
+			<input type="submit" value="Go"/>		
+		</form>		
+	</section>	
+</body>
+</html>
